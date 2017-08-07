@@ -1,1 +1,8 @@
-source: _dist
+source: ./
+exclude:
+  - _dist
+  - node_modules
+  - src
+  - gulpfile.js
+  - package.json
+  - README.md
