@@ -1,4 +1,4 @@
-[1,2,3].forEach(showItWorks);
+[1,2,3].forEach(x => showItWorks());
 
 
 function showItWorks() {
