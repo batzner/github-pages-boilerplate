@@ -30,7 +30,7 @@ gulp.task('default', ['_javascripts']);
 // Run Jekyll
 gulp.task('jekyll', ['default'], function (gulpCallBack) {
     let spawn = require('child_process').spawn;
-    let jekyll = spawn('jekyll', ['build'], {stdio: 'inherit'});
+    let jekyll = spawn('jekyll', ['serve'], {stdio: 'inherit'});
 
     jekyll.on('exit', function (code) {
         gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited with code: ' + code);
