@@ -1,6 +1,6 @@
 # github-pages-boilerplate
 
-Ready-to-fork setup of Babel, Gulp and Jekyll for GitHub Pages. [Blog post](http://mlowl.com/post/jekyll-github-pages-gulp-babel-directory-structure/) about this repo.
+Ready-to-fork setup of Babel, Gulp and Jekyll for GitHub Pages. [Showcase / Blog post](https://theblog.github.io/post/jekyll-github-pages-gulp-babel-directory-structure/) about this repo.
 
 ## Usage
 1. Fork the repo
