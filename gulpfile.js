@@ -17,12 +17,11 @@ function _copy() {
     return gulp.src(['src/**/*']).pipe(gulp.dest(distDir));
 };
 
-// Transpile the javascript files to ES5 in the dist directory (in-place)
 // Transpile the javascript files in the dist directory (in-place)
 function _javascripts() {
     return gulp.src('js/**/*.js', {base: distDir, cwd: distDir})
         .pipe(babel({
-            presets: ['es2015']
+            presets: ['@babel/preset-env']
         }))
         .pipe(gulp.dest(distDir));
 };
