@@ -1,9 +1,9 @@
 "use strict";
 
 [1, 2, 3].forEach(function (x) {
-    return showItWorks();
+  return showItWorks();
 });
 
 function showItWorks() {
-    document.getElementById("javascript-status").innerHTML = "JavaScript transpilation works!";
+  document.getElementById("javascript-status").innerHTML = "JavaScript transpilation works!";
 }
