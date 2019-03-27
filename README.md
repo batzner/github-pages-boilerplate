@@ -19,7 +19,8 @@ Note: You can skip Babel during development by changing `source: _dist` to `sour
 * Running Babel for transpiling the files for browsers before each deployment of the site is not practical, so a build tool like Gulp that runs Babel automatically is a must.
 * There is a <a href="https://github.com/babel/jekyll-babel" target="_blank">jekyll-babel Jekyll plugin</a> but you have to start each .js file with exactly
   ```
-  ------
+  ---
+  ---
   ```
   WebStorm does not like that and formats it wrongly every time. If you try to escape that block with `// @formatter:off`, the Jekyll plugin won't work anymore. Also, it is a bit dirty to mess with the .js files. If I want to directly run them during development, they will error. So, Babel has to be called by Gulp.
 * Babel will generate the transpiled .js files somewhere. I don't want these files to mingle with the actual source .js files - that would cause confusion. So, using a `src` and a `_dist` directory (ignored by git) would be clean. Jekyll can then generate the static site in `_site` by using the files in `_dist`.
